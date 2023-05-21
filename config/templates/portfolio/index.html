@@ -1,0 +1,41 @@
+{% extends 'base.html' %}{% load static %}
+{% block head %}<link rel="stylesheet" href="{% static 'index.css' %}">
+<title>Home</title>{% endblock head %}
+{% block content %}
+    <div class="separate"></div>
+    <div class="separate"></div>
+    <section id="main">
+        <div>Hey there 
+            <span class="waving-hand">👋</span>
+            <span class="waving-hand">👋</span>!
+        </div>
+        <article class="intro">
+            <p>My name is <b>Mark Mbithi</b> and welcome to my website!</p>
+            <p>I am so excited to have you here!</p>
+        </article>
+        <div>
+            <span class="laughing-man">😂</span>
+            <span class="laughing-man">😂</span>
+            See
+            <span class="laughing-man">😂</span>
+            <span class="laughing-man">😂</span>
+        </div>
+        <article class="intro">
+            <p>Don't forget to contact me through the <a class="mini-link" href="#bottom-nav">links</a> below.</p>
+        </article>
+        <div class="separate"></div>
+        <article class="intro">
+            <p>I am an aspiring web developer and am also a student a university student in Kenya.</p>
+            <p>I am self-taught.</p>
+            <p>I have been coding for a few months now and I thought it the best time to test my skills by building my first portfolio website.</p>
+        </article>
+        <div class="separate"></div>
+        <article class="intro">
+            <p>Check the <a class="mini-link" href="{% url 'about' %}">about</a> tab to find out more about me.</p>
+            <p>Check the <a class="mini-link" href="{% url 'projects' %}">projects</a> tab to see some of the projects I have written.</p>
+            <p>Check the <a class="mini-link" href="{% url 'gallery' %}">gallery</a> tab to see fun pictures of me and my life.</p>
+        </article>
+    </section>
+    <div class="separate"></div>
+    <div class="separate"></div>
+{% endblock content %}

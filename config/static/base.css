@@ -1,0 +1,103 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Styling the header */
+  header, footer {
+    padding: 20px;
+    background: linear-gradient(
+        grey, black
+    );
+  }
+  
+  /* Styling the navigation bar */
+  #main-nav {
+    padding: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: medium;
+    color: white;
+    
+  }
+
+  a:hover {
+    color: peachpuff    ;
+  }
+
+  a:focus {
+    color: peru;
+  }
+
+  /*a:visited {
+    color: burlywood;
+  }*/
+
+  #main-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #main-nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  #main-nav li a {
+    text-decoration: none;
+    padding: 5px
+  }
+
+  #home, #about, #projects, #gallery {
+    font-weight: 5px;
+  }
+
+  #welcome {
+    text-align: center;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-style: italic;
+  }
+
+
+  /* styling the content of page*/
+  #main {
+    text-align:center;
+    background-color: rgb(207, 201, 201);
+  }
+
+  /* styling the footer of the page*/
+  footer {
+    font-family: sans-serif;
+    font-size: large;
+  }
+
+  #bottom-nav {
+    min-height: 50px;
+    max-height: 100px;
+  }
+
+  #bottom-nav #bottom-ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #last-message {
+    text-align: center;
+  }
+
+  header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}

@@ -1,0 +1,46 @@
+.separate {
+    height: 20px;
+    opacity: 100%;
+}
+
+.mini-link {
+    color: black;
+    text-decoration: underline;
+}
+
+.mini-link:hover {
+    color: brown;
+}
+
+.mini-link:focus {
+    color: chocolate;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+  
+.projects img {
+    margin: 50px;
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image img {
+    transition: transform 0.3s ease;
+  }
+  
+  .image img:hover {
+    transform: scale(1.2);
+  }

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}{% load static %}
+{% block head %}<link rel="stylesheet" href="{% static 'gallery.css' %}">
+<title>Gallery</title>{% endblock head %}
+{% block content %}
+    <div class="separate"></div>
+    <div class="separate"></div>
+    <div class="images">
+        <div class="image">
+            <img src="{% static 'IMG-20221025-WA0004.jpg' %}" alt="picture1">
+        </div>
+        <div class="separate"></div>
+        <div class="image">
+            <img src="{% static 'IMG_20220929_023620.jpg' %}" alt="picture2">
+        </div>
+        <div class="separate"></div>
+        <div class="image">
+            <img src="{% static 'IMG_20220827_094826.jpg' %}" alt="picture3">
+        </div>
+        <div class="separate"></div>
+        <div class="image">
+            <img src="{% static 'IMG_20220721_155459.jpg' %}" alt="picture4">
+        </div>
+    </div>
+    <div class="separate"></div>
+    <div class="separate"></div>
+{% endblock content %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}{% load static %}
+{% block head %}<link rel="stylesheet" href="{% static 'projects.css' %}">
+<title>Projects</title>{% endblock head %}
+{% block content %}
+    <div class="separate"></div>
+    <div class="separate"></div>
+    <h2>Click on the image to redirect to project</h2>
+    <div class="separate"></div>
+    <div class="separate"></div>
+    <div class="projects">
+        <div class="image">
+            <a class="mini-link" href="https://github.com/opaque-maniac/command_line_tool" target="_blank">
+                <img id="cmd" src="{% static 'cmd.png' %}" alt="python command line">
+            </a>
+        </div>
+        <div class="image">
+            <a class="mini-link" href="https://github.com/opaque-maniac/blog_site" target="_blank">
+                <img id="blog" src="{% static 'blog.png' %}" alt="blog website">
+            </a>
+        </div>
+        <div class="image">
+            <a class="mini-link" href="https://github.com/opaque-maniac/portfolio" target="_blank">
+                <img id="portfolio" src="{% static 'portfolio.png' %}" alt="portfolio website">
+            </a>
+        </div>
+    </div>
+    <div class="separate"></div>
+    <div class="separate"></div>
+{% endblock content %}
