@@ -13,7 +13,8 @@ const handleClick = (e) => {
   span.forEach((sp) => {
     sp.classList.toggle("hidden");
   });
-  const parent = target.parentElement;
+  const parent = target.parentElement.parentElement;
+  console.log(parent);
   const sibling = parent.nextElementSibling;
   sibling.classList.toggle("hidden");
   if (sibling.getAttribute("aria-hidden") === "true") {

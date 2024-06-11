@@ -33,7 +33,7 @@ section {
   margin: 0 auto;
 }
 
-.about {
+.about-container {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -41,17 +41,17 @@ section {
 }
 
 .about,
-.projects {
+.projects,
+.skills,
+.education,
+.experience {
   background-color: #f8f9fa;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.projects ul {
-  list-style: none;
-  padding: 0;
-}
+
 .projects li {
   background: #e9ecef;
   margin: 10px 0;
@@ -60,8 +60,9 @@ section {
 }
 .image-container {
   flex-basis: 40%;
+  order: 2;
 }
-.about-container {
+.about-container-about {
   flex-basis: 55%;
 }
 .image-container img {
@@ -104,7 +105,7 @@ footer span {
   display: flex;
   justify-content: start;
   align-items: start;
-  transition: left 0.5s ease-in-out;
+  transition: left 0.3s ease-in-out;
   gap: 30px;
 }
 
@@ -203,7 +204,13 @@ footer form a {
 
 .toggle-button {
   background-color: transparent;
-  border: 0.5px solid #007bff;
+  background-color: #007bff;
+  display: block;
+  height: 20px;
+  width: 30px;
+  border-radius: 5px;
+  border-color: transparent;
+  box-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 20%);
 }
 .toggle-button span {
   font-size: 1rem;
@@ -269,6 +276,71 @@ footer form a {
   animation: bounce 0.6s 0.5s infinite;
 }
 
+/* For the logos */
+.skills ul,
+.skills li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills img:hover {
+  transform: scale(1.2);
+}
+
+.skills ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills p {
+  text-align: center;
+}
+
+.backend-python,
+.skills-basics,
+.frontend-frameworks {
+  margin-bottom: 2rem;
+}
+
+.backend-python ul,
+.skills-basics ul {
+  gap: 5rem;
+}
+
+.backend-python img,
+.skills-basics img {
+  width: 100px;
+  height: 100px;
+}
+
+.backend-js ul,
+.frontend-frameworks ul {
+  gap: 6rem;
+}
+
+.backend-js img,
+.frontend-frameworks img {
+  width: 120px;
+  height: 90px;
+}
+
+/* The experience section */
+.experience span {
+  font-weight: 700;
+}
+.experience ul,
+.experience li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.experience li {
+  width: 90%;
+  margin: 0 auto 1rem auto;
+}
+
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
   header {
@@ -310,7 +382,7 @@ footer form a {
   .projects li {
     font-size: 0.9em;
   }
-  .about {
+  .about-container {
     display: block;
   }
   .image-container {
@@ -337,6 +409,20 @@ footer form a {
   #success-message-container {
     height: 80px;
     width: 250px;
-    top: -30px;
+    top: -50px;
+  }
+  .skills ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .skills img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .backend-python,
+  .skills-basics,
+  .frontend-frameworks {
+    margin-bottom: 0rem;
   }
 }

@@ -34,274 +34,136 @@
     </header>
 
     <section class="about">
+      <h2>About Me</h2>
       <div class="about-container">
-        <h2>About Me</h2>
-        <p>
-          Hi, I'm Mark Mbithi Mutunga from Nairobi, Kenya. I am a student at the
-          University of Nairobi studying Actuarial Science. I am also a
-          self-taught web developer.
-        </p>
-        <p>
-          I am currently working at
-          <a
-            href="https://hyperskill.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Hyperskill</a
-          >
-          as a topic author and tester.
-        </p>
-        <p>
-          I am always looking for challenging work and I would never turn down a
-          chance to grow my skills as a developer.
-        </p>
-        <p>
-          I have built multiple projects using various web technologies, some of
-          which are listed below. From these projects I have learned a variety
-          of languages and frameworks including Django, React, and Express. I am
-          also familiar with Python, JavaScript, and SQL.
-        </p>
-        <p>
-          If you need to contact me, you can check
-          <a href="#contact">here</a>
-        </p>
-      </div>
-      <div class="image-container">
-        <img src="./static/me.jpg" alt="Mark Mbithi Mutunga" />
+        <div class="image-container">
+          <img src="./static/me.jpg" alt="Mark Mbithi Mutunga" />
+        </div>
+        <div class="about-container-about">
+          <p>
+            Hi, I'm Mark Mbithi Mutunga from Nairobi, Kenya. I am a student at
+            the University of Nairobi studying Actuarial Science. I am also a
+            self-taught web developer.
+          </p>
+          <p>
+            I am always looking for challenging work and I would never turn down
+            a chance to grow my skills as a developer.
+          </p>
+          <p>
+            I like reading books and going out on my bike. I enjoy learnign and
+            listening to music while I carry out a big chunk of my activities.
+          </p>
+          <p>
+            If you need to contact me, you can check
+            <a href="#contact">here</a>
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="projects">
       <h2>Projects</h2>
+      <ul></ul>
+    </section>
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div>
+        <div class="skills-basics">
+          <ul>
+            <li>
+              <div>
+                <img src="./static/icons/html.svg" alt="HTML5 icon" />
+                <p>HTML 5</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="./static/icons/css.svg" alt="CSS3 icon" />
+                <p>CSS 3</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="./static/icons/js.svg" alt="JavaScript icon" />
+                <p>JavaScript</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="frontend-frameworks">
+          <ul>
+            <li>
+              <div>
+                <img src="./static/icons/react.svg" alt="React JS icon" />
+                <p>React JS</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  src="./static/icons/tailwind.svg"
+                  alt="Tailwind CSS icon"
+                />
+                <p>Tailwind CSS</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="backend-python">
+          <ul>
+            <li>
+              <div>
+                <img src="./static/icons/python.svg" alt="Python icon" />
+                <p>Python</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="./static/icons/django.svg" alt="Django icon" />
+                <p>Django</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="./static/icons/flask.svg" alt="Flask icon" />
+                <p>Flask</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="backend-js">
+          <ul>
+            <li>
+              <div>
+                <img src="./static/icons/node.svg" alt="Node JS icon" />
+                <p>Node JS</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src="./static/icons/expess.svg" alt="Express JS icon" />
+                <p>Express JS</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="education" class="education">
+      <h2>Education</h2>
+    </section>
+    <section id="experience" class="experience">
+      <h2>Experience</h2>
       <ul>
         <li>
-          <div class="project-title">
-            <p>Blog Site (Django REST framework & React)</p>
-            <button aria-label="Toggle Button" class="toggle-button">
-              <span class="fa-solid fa-caret-down down"></span
-              ><span class="fa-solid fa-caret-up hidden up"></span>
-            </button>
-          </div>
-          <div class="hidden project-description" aria-hidden="true">
-            <div>
-              <p>
-                This is a simple blog site with an API written using the Django
-                Rest Framework and the frontend is written in ReactJs. The Data
-                Base used for testign is SQLite3 but it is possible to use it
-                with any database because of how good the django
-                <span style="font-weight: 700">ORM</span> is. The site allowed
-                any account holder to register/sign in and read as well as post
-                their own blogs. One of the first react projects I ever build.
-              </p>
-              <p>
-                Here is the
-                <a
-                  href="https://github.com/opaque-maniac/blog_site"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >link</a
-                >
-                to the repository.
-              </p>
-            </div>
-            <div>
-              <img
-                src="./static/blogger.png"
-                alt="Screen shot of blog site home page"
-              />
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="project-title">
-            <p>Django Recipe App</p>
-            <button aria-label="Toggle Button" class="toggle-button">
-              <span class="fa-solid fa-caret-down down"></span
-              ><span class="fa-solid fa-caret-up hidden up"></span>
-            </button>
-          </div>
-          <div class="hidden project-description" aria-hidden="true">
-            <div>
-              <p>
-                This is a simple recipe app written in Django, Django Template
-                and CSS. It is probably one of the first times I build a sort of
-                full-stack application. It was responsive and dynamic. It even
-                used a WYSIWYG editor for the recipe content. This of-course was
-                easy to work with considering that django has a built in admin
-                panel and that meant I didnt have to build that from scratch.
-              </p>
-              <p>
-                Here is the
-                <a
-                  href="https://github.com/opaque-maniac/django-repice-app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >link</a
-                >
-                to the repository.
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="project-title">
-            <p>Django Learning Log</p>
-            <button aria-label="Toggle Button" class="toggle-button">
-              <span class="fa-solid fa-caret-down down"></span
-              ><span class="fa-solid fa-caret-up hidden up"></span>
-            </button>
-          </div>
-          <div class="hidden project-description" aria-hidden="true">
-            <div>
-              <p>
-                This was my first Django Application. Wasnt too hard but it was
-                a good project to learn how to so a lot of the things I know now
-                about Django as a framework. It is a platfrom where users can
-                keep track of their progress as they learn new things. Each user
-                had their own learning log with topics, with each topic having
-                mulitiple entries.
-              </p>
-              <p>
-                Here is the
-                <a
-                  href="https://github.com/opaque-maniac/learning_log"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >link</a
-                >
-                to the repository.
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="project-title">
-            <p>Django marketplace</p>
-            <button aria-label="Toggle Button" class="toggle-button">
-              <span class="fa-solid fa-caret-down down"></span
-              ><span class="fa-solid fa-caret-up hidden up"></span>
-            </button>
-          </div>
-          <div class="hidden project-description" aria-hidden="true">
-            <div>
-              <p>
-                This is a simple marketplace plattform. Just like all the other
-                platforms, this one allows people to buy and sell commodities
-                online. It is written in Django, Django Template and CSS. It was
-                quite fun learning to build this platform because now I can do
-                it again and again. It was a good learning experience.
-              </p>
-              <p>
-                Here is the
-                <a
-                  href="https://github.com/opaque-maniac/django-marketplace"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >link</a
-                >
-                to the repository.
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="project-title">
-            <p>To-Do API</p>
-            <button aria-label="Toggle Button" class="toggle-button">
-              <span class="fa-solid fa-caret-down down"></span
-              ><span class="fa-solid fa-caret-up hidden up"></span>
-            </button>
-          </div>
-          <div class="hidden project-description" aria-hidden="true">
-            <div>
-              <p>
-                This is the first rest-full API I ever built using express. It
-                taught me a lot and provided the basis for a bunch of other
-                project I have build since then. It was a simple to-do list API
-                written in express. It was supposed to be my learning project.
-                Through this I learned to build more complex and more powerfull
-                APIs.
-              </p>
-              <p>
-                Here is the
-                <a
-                  href="https://github.com/opaque-maniac/todo-api"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >link</a
-                >
-                to the repository.
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="project-title">
-            <p>Market Place - <span>Current Project</span></p>
-            <button aria-label="Toggle Button" class="toggle-button">
-              <span class="fa-solid fa-caret-down down"></span
-              ><span class="fa-solid fa-caret-up hidden up"></span>
-            </button>
-          </div>
-          <div class="hidden project-description" aria-hidden="true">
-            <div>
-              <p>
-                This is the project I am currently working on. It is an online
-                marketplace, somewhat like
-                <span style="font-weight: 700"
-                  ><a
-                    href="http://www.jumia.co.ke"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Jumia</a
-                  ></span
-                >. Users can view products, add to cart and buy them. Their
-                actions are limited based of whether they have an account or
-                not. The frontend is written in React though I might re-write it
-                using typescript for type-safety. The backend is a rest-full API
-                written in express and there is also a staff console app also
-                written in react-TypeScript.
-              </p>
-              <p>
-                Here is the
-                <a
-                  href="https://github.com/opaque-maniac/marketPlace"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >link</a
-                >
-                to the repository.
-              </p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="project-title">
+          <div>
+            <h3>Topic Author/Tester</h3>
             <p>
-              Other projects on
-              <a
-                href="http://www.github.com/opaque-maniac"
-                target="_blank"
-                rel="noopener noreferrer"
-                >GitHub</a
-              >
+              I am a topic author. Here I write topics for students who use the
+              platform when learning how to code, questions and tests to those
+              questions.
             </p>
-            <button aria-label="Toggle Button" class="toggle-button">
-              <span class="fa-solid fa-caret-down down"></span
-              ><span class="fa-solid fa-caret-up hidden up"></span>
-            </button>
-          </div>
-          <div class="hidden project-description" aria-hidden="true">
-            <p>
-              If you are interested to see more projects becase there are many
-              more, visit my github page. You can do this using this
-              <a
-                href="http://www.github.com/opaque-maniac"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Link</a
-              >
-            </p>
+            <p>Since: <span>November 2023</span></p>
           </div>
         </li>
       </ul>
