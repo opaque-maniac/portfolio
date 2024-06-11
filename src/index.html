@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="./index.js" defer></script>
+    <title>Mark Mbithi Mutunga</title>
+  </head>
+  <body>
+    <header>
+      <h1>Mark Mbithi Mutunga</h1>
+      <p>Always Learning, Always Growing</p>
+    </header>
+
+    <section class="about">
+      <div class="about-container">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Mark Mbithi Mutunga from Nairobi, Kenya. I am a student at the
+          University of Nairobi studying Actuarial Science. I am also a
+          self-taught web developer.
+        </p>
+        <p>
+          I am currently working at
+          <a
+            href="https://hyperskill.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Hyperskill</a
+          >
+          as a topic author and tester.
+        </p>
+        <p>
+          I am always looking for challenging work and I would never turn down a
+          chance to grow my skills as a developer.
+        </p>
+        <p>
+          I have built multiple projects using various web technologies, some of
+          which are listed below. From these projects I have learned a variety
+          of languages and frameworks including Django, React, and Express. I am
+          also familiar with Python, JavaScript, and SQL.
+        </p>
+        <p>
+          If you need to contact me, you can check
+          <a href="#contact">here</a>
+        </p>
+      </div>
+      <div class="image-container">
+        <img src="./static/me.jpg" alt="Mark Mbithi Mutunga" />
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <div class="project-title">
+            <p>Blog Site (Django REST framework & React)</p>
+            <button aria-label="Toggle Button" class="toggle-button">
+              <span class="fa-solid fa-caret-down down"></span
+              ><span class="fa-solid fa-caret-up hidden up"></span>
+            </button>
+          </div>
+          <div class="hidden project-description" aria-hidden="true">
+            <div>
+              <p>
+                This is a simple blog site with an API written using the Django
+                Rest Framework and the frontend is written in ReactJs. The Data
+                Base used for testign is SQLite3 but it is possible to use it
+                with any database because of how good the django
+                <span style="font-weight: 700">ORM</span> is. The site allowed
+                any account holder to register/sign in and read as well as post
+                their own blogs. One of the first react projects I ever build.
+              </p>
+              <p>
+                Here is the
+                <a
+                  href="https://github.com/opaque-maniac/blog_site"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >link</a
+                >
+                to the repository.
+              </p>
+            </div>
+            <div>
+              <img
+                src="./static/blogger.png"
+                alt="Screen shot of blog site home page"
+              />
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="project-title">
+            <p>Django Recipe App</p>
+            <button aria-label="Toggle Button" class="toggle-button">
+              <span class="fa-solid fa-caret-down down"></span
+              ><span class="fa-solid fa-caret-up hidden up"></span>
+            </button>
+          </div>
+          <div class="hidden project-description" aria-hidden="true">
+            <div>
+              <p>
+                This is a simple recipe app written in Django, Django Template
+                and CSS. It is probably one of the first times I build a sort of
+                full-stack application. It was responsive and dynamic. It even
+                used a WYSIWYG editor for the recipe content. This of-course was
+                easy to work with considering that django has a built in admin
+                panel and that meant I didnt have to build that from scratch.
+              </p>
+              <p>
+                Here is the
+                <a
+                  href="https://github.com/opaque-maniac/django-repice-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >link</a
+                >
+                to the repository.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="project-title">
+            <p>Django Learning Log</p>
+            <button aria-label="Toggle Button" class="toggle-button">
+              <span class="fa-solid fa-caret-down down"></span
+              ><span class="fa-solid fa-caret-up hidden up"></span>
+            </button>
+          </div>
+          <div class="hidden project-description" aria-hidden="true">
+            <div>
+              <p>
+                This was my first Django Application. Wasnt too hard but it was
+                a good project to learn how to so a lot of the things I know now
+                about Django as a framework. It is a platfrom where users can
+                keep track of their progress as they learn new things. Each user
+                had their own learning log with topics, with each topic having
+                mulitiple entries.
+              </p>
+              <p>
+                Here is the
+                <a
+                  href="https://github.com/opaque-maniac/learning_log"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >link</a
+                >
+                to the repository.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="project-title">
+            <p>Django marketplace</p>
+            <button aria-label="Toggle Button" class="toggle-button">
+              <span class="fa-solid fa-caret-down down"></span
+              ><span class="fa-solid fa-caret-up hidden up"></span>
+            </button>
+          </div>
+          <div class="hidden project-description" aria-hidden="true">
+            <div>
+              <p>
+                This is a simple marketplace plattform. Just like all the other
+                platforms, this one allows people to buy and sell commodities
+                online. It is written in Django, Django Template and CSS. It was
+                quite fun learning to build this platform because now I can do
+                it again and again. It was a good learning experience.
+              </p>
+              <p>
+                Here is the
+                <a
+                  href="https://github.com/opaque-maniac/django-marketplace"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >link</a
+                >
+                to the repository.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="project-title">
+            <p>To-Do API</p>
+            <button aria-label="Toggle Button" class="toggle-button">
+              <span class="fa-solid fa-caret-down down"></span
+              ><span class="fa-solid fa-caret-up hidden up"></span>
+            </button>
+          </div>
+          <div class="hidden project-description" aria-hidden="true">
+            <div>
+              <p>
+                This is the first rest-full API I ever built using express. It
+                taught me a lot and provided the basis for a bunch of other
+                project I have build since then. It was a simple to-do list API
+                written in express. It was supposed to be my learning project.
+                Through this I learned to build more complex and more powerfull
+                APIs.
+              </p>
+              <p>
+                Here is the
+                <a
+                  href="https://github.com/opaque-maniac/todo-api"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >link</a
+                >
+                to the repository.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="project-title">
+            <p>Market Place - <span>Current Project</span></p>
+            <button aria-label="Toggle Button" class="toggle-button">
+              <span class="fa-solid fa-caret-down down"></span
+              ><span class="fa-solid fa-caret-up hidden up"></span>
+            </button>
+          </div>
+          <div class="hidden project-description" aria-hidden="true">
+            <div>
+              <p>
+                This is the project I am currently working on. It is an online
+                marketplace, somewhat like
+                <span style="font-weight: 700"
+                  ><a
+                    href="http://www.jumia.co.ke"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Jumia</a
+                  ></span
+                >. Users can view products, add to cart and buy them. Their
+                actions are limited based of whether they have an account or
+                not. The frontend is written in React though I might re-write it
+                using typescript for type-safety. The backend is a rest-full API
+                written in express and there is also a staff console app also
+                written in react-TypeScript.
+              </p>
+              <p>
+                Here is the
+                <a
+                  href="https://github.com/opaque-maniac/marketPlace"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >link</a
+                >
+                to the repository.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="project-title">
+            <p>
+              Other projects on
+              <a
+                href="http://www.github.com/opaque-maniac"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </p>
+            <button aria-label="Toggle Button" class="toggle-button">
+              <span class="fa-solid fa-caret-down down"></span
+              ><span class="fa-solid fa-caret-up hidden up"></span>
+            </button>
+          </div>
+          <div class="hidden project-description" aria-hidden="true">
+            <p>
+              If you are interested to see more projects becase there are many
+              more, visit my github page. You can do this using this
+              <a
+                href="http://www.github.com/opaque-maniac"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Link</a
+              >
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <div id="contact">
+        <p>
+          Connect with me:
+          <a href="#">
+            <span aria-label="Github Icon" class="fa-brands fa-github"></span>
+          </a>
+          |
+          <a href="#">
+            <span
+              aria-label="Linkedin Icon"
+              class="fa-brands fa-linkedin"
+            ></span>
+          </a>
+          |
+          <a href="#">
+            <span class="fa-brands fa-square-x-twitter"></span>
+          </a>
+        </p>
+      </div>
+      <div id="form">
+        <div>
+          <form>
+            <div>
+              <label class="hidden" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div>
+              <label class="hidden" for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div>
+              <label class="hidden" for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
