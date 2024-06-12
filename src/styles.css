@@ -261,6 +261,16 @@ footer form a {
   }
 }
 
+.visible {
+  transform: translateX(0);
+}
+.scroll-out-left {
+  transform: translateX(-100%);
+}
+.scroll-out-right {
+  transform: translateX(100%);
+}
+
 .lds-ellipsis {
   display: flex;
   justify-content: center;

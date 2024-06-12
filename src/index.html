@@ -40,6 +40,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Scripts -->
     <script type="text/javascript" src="./index.js" defer></script>
     <script type="text/javascript" src="./modal.js" defer></script>
     <script
@@ -55,6 +57,10 @@
         });
       }
     </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/framer-motion@5/dist/framer-motion.umd.js"
+      defer
+    ></script>
     <title>Mark Mbithi Mutunga</title>
   </head>
   <body>
@@ -100,7 +106,7 @@
             </p>
           </div>
           <div>
-            <img src="./static/bloggy.png" alt="Bloggy Screenshot" />
+            <img id="me" src="./static/bloggy.png" alt="Bloggy Screenshot" />
           </div>
         </div>
 
@@ -298,7 +304,7 @@
             </ul>
           </div>
           <div class="backend-python">
-            <ul>
+            <ul class="animate-on-scroll">
               <li>
                 <div>
                   <img src="./static/icons/python.svg" alt="Python icon" />
