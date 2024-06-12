@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#007bff" />
+    <link rel="icon" href="./static/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -12,6 +14,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript" src="./index.js" defer></script>
+    <script type="text/javascript" src="./modal.js" defer></script>
     <script
       type="text/javascript"
       defer
@@ -28,233 +31,503 @@
     <title>Mark Mbithi Mutunga</title>
   </head>
   <body>
-    <header>
-      <h1>Mark Mbithi Mutunga</h1>
-      <p>Always Learning, Always Growing</p>
-    </header>
-
-    <section class="about">
-      <h2>About Me</h2>
-      <div class="about-container">
-        <div class="image-container">
-          <img src="./static/me.jpg" alt="Mark Mbithi Mutunga" />
-        </div>
-        <div class="about-container-about">
-          <p>
-            Hi, I'm Mark Mbithi Mutunga from Nairobi, Kenya. I am a student at
-            the University of Nairobi studying Actuarial Science. I am also a
-            self-taught web developer.
-          </p>
-          <p>
-            I am always looking for challenging work and I would never turn down
-            a chance to grow my skills as a developer.
-          </p>
-          <p>
-            I like reading books and going out on my bike. I enjoy learnign and
-            listening to music while I carry out a big chunk of my activities.
-          </p>
-          <p>
-            If you need to contact me, you can check
-            <a href="#contact">here</a>
-          </p>
-        </div>
+    <!-- The Modal -->
+    <div class="modal hidden" aria-hidden="true">
+      <div
+        id="modal-button"
+        tabindex="0"
+        role="button"
+        aria-label="Click To Close Popup"
+      >
+        <span class="fa-regular fa-circle-xmark"></span>
       </div>
-    </section>
 
-    <section class="projects">
-      <h2>Projects</h2>
-      <ul></ul>
-    </section>
-    <section id="skills" class="skills">
-      <h2>Skills</h2>
-      <div>
-        <div class="skills-basics">
-          <ul>
-            <li>
-              <div>
-                <img src="./static/icons/html.svg" alt="HTML5 icon" />
-                <p>HTML 5</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="./static/icons/css.svg" alt="CSS3 icon" />
-                <p>CSS 3</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="./static/icons/js.svg" alt="JavaScript icon" />
-                <p>JavaScript</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="frontend-frameworks">
-          <ul>
-            <li>
-              <div>
-                <img src="./static/icons/react.svg" alt="React JS icon" />
-                <p>React JS</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img
-                  src="./static/icons/tailwind.svg"
-                  alt="Tailwind CSS icon"
-                />
-                <p>Tailwind CSS</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="backend-python">
-          <ul>
-            <li>
-              <div>
-                <img src="./static/icons/python.svg" alt="Python icon" />
-                <p>Python</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="./static/icons/django.svg" alt="Django icon" />
-                <p>Django</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="./static/icons/flask.svg" alt="Flask icon" />
-                <p>Flask</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="backend-js">
-          <ul>
-            <li>
-              <div>
-                <img src="./static/icons/node.svg" alt="Node JS icon" />
-                <p>Node JS</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="./static/icons/expess.svg" alt="Express JS icon" />
-                <p>Express JS</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="education" class="education">
-      <h2>Education</h2>
-    </section>
-    <section id="experience" class="experience">
-      <h2>Experience</h2>
-      <ul>
-        <li>
+      <!-- Projects Section in Modal -->
+      <section id="modal-section" class="modal-section">
+        <!-- First Project -->
+        <div
+          id="bloggy"
+          class="modal-project hidden"
+          data-name="blog-app"
+          aria-hidden="true"
+        >
           <div>
-            <h3>Topic Author/Tester</h3>
             <p>
-              I am a topic author. Here I write topics for students who use the
-              platform when learning how to code, questions and tests to those
-              questions.
+              This is a simple blog site with an API written using the Django
+              Rest Framework and the frontend is written in ReactJs. The Data
+              Base used for testign is SQLite3 but it is possible to use it with
+              any database because of how good the django
+              <span style="font-weight: 700">ORM</span> is. The site allowed any
+              account holder to register/sign in and read as well as post their
+              own blogs. One of the first react projects I ever build.
             </p>
-            <p>Since: <span>November 2023</span></p>
+            <p>
+              Here is the
+              <a
+                href="https://github.com/opaque-maniac/blog_site"
+                target="_blank"
+                rel="noopener noreferrer"
+                >link</a
+              >
+              to the repository.
+            </p>
           </div>
-        </li>
-      </ul>
-    </section>
-
-    <footer>
-      <div id="success-message-container">
-        <div id="button-container">
-          <div
-            id="button"
-            tabindex="0"
-            role="button"
-            aria-label="Click To Close Popup"
-          >
-            <span class="fa-regular fa-circle-xmark"></span>
+          <div>
+            <img src="./static/bloggy.png" alt="Bloggy Screenshot" />
           </div>
         </div>
-        <p id="display-message"></p>
-      </div>
-      <div id="contact">
-        <p>
-          Connect with me:
-          <a href="#">
-            <span aria-label="Github Icon" class="fa-brands fa-github"></span>
-          </a>
-          |
-          <a href="#">
-            <span
-              aria-label="Linkedin Icon"
-              class="fa-brands fa-linkedin"
-            ></span>
-          </a>
-          |
-          <a href="#">
-            <span class="fa-brands fa-square-x-twitter"></span>
-          </a>
-        </p>
-      </div>
-      <div id="form">
-        <div>
-          <form id="contact-form">
-            <div>
-              <label class="hidden" for="email">Email</label>
-              <input
-                type="email"
-                name="user_email"
-                id="email"
-                placeholder="Your Email"
-                required
-              />
-            </div>
-            <div>
-              <label class="hidden" for="name">Name</label>
-              <input
-                type="text"
-                name="user_name"
-                id="name"
-                placeholder="Your Name"
-                required
-              />
-            </div>
-            <div style="margin-bottom: 0">
-              <label class="hidden" for="message">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Message"
-                cols="10"
-                rows="10"
-              ></textarea>
-            </div>
-            <div>
-              <button
-                style="display: inline-block; margin-top: 1rem"
-                type="submit"
-                id="submit-button"
+
+        <!-- Second Project -->
+        <div
+          id="recipe-app"
+          class="modal-project hidden"
+          data-name="recipe-app"
+          aria-hidden="true"
+        >
+          <div>
+            <p>
+              This is a simple recipe app written in Django, Django Template and
+              CSS. It is probably one of the first times I build a sort of
+              full-stack application. It was responsive and dynamic. It even
+              used a WYSIWYG editor for the recipe content. This of-course was
+              easy to work with considering that django has a built in admin
+              panel and that meant I didnt have to build that from scratch.
+            </p>
+            <p>
+              Here is the
+              <a
+                href="https://github.com/opaque-maniac/django-repice-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >link</a
               >
-                Send
-              </button>
-              <div style="margin-top: 2rem" id="loader" class="hidden">
-                <div class="lds-ellipsis">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
+              to the repository.
+            </p>
+          </div>
+          <div>
+            <img
+              src="./static/flavor-fusion.png"
+              alt="Flavor Fusion Screenshot"
+            />
+          </div>
+        </div>
+
+        <!-- Third Project -->
+        <div
+          id="learning-log"
+          class="modal-project hidden"
+          data-name="learning-log"
+          aria-hidden="true"
+        >
+          <div>
+            <p>
+              This was my first Django Application. Wasnt too hard but it was a
+              good project to learn how to so a lot of the things I know now
+              about Django as a framework. It is a platfrom where users can keep
+              track of their progress as they learn new things. Each user had
+              their own learning log with topics, with each topic having
+              mulitiple entries.
+            </p>
+            <p>
+              Here is the
+              <a
+                href="https://github.com/opaque-maniac/learning_log"
+                target="_blank"
+                rel="noopener noreferrer"
+                >link</a
+              >
+              to the repository.
+            </p>
+          </div>
+          <div>
+            <img
+              src="./static/learning-log.png"
+              alt="Learning Log Screenshot"
+            />
+          </div>
+        </div>
+
+        <!-- Fourth Project -->
+        <div
+          id="puddle"
+          class="modal-project hidden"
+          data-name="marketplace"
+          aria-hidden="true"
+        >
+          <div>
+            <p>
+              This is a simple marketplace plattform. Just like all the other
+              platforms, this one allows people to buy and sell commodities
+              online. It is written in Django, Django Template and CSS. It was
+              quite fun learning to build this platform because now I can do it
+              again and again. It was a good learning experience.
+            </p>
+            <p>
+              Here is the
+              <a
+                href="https://github.com/opaque-maniac/django-marketplace"
+                target="_blank"
+                rel="noopener noreferrer"
+                >link</a
+              >
+              to the repository.
+            </p>
+          </div>
+          <div>
+            <img src="./static/hazina.png" alt="Puddle Screenshot" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Main part of the page -->
+    <div>
+      <!-- The Header -->
+      <header>
+        <h1>Mark Mbithi Mutunga</h1>
+        <p>Always Learning, Always Growing</p>
+      </header>
+
+      <!-- About Section -->
+      <section class="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+          <div class="image-container">
+            <img src="./static/me.jpg" alt="Mark Mbithi Mutunga" />
+          </div>
+          <div class="about-container-about">
+            <p>
+              Hi, I'm Mark Mbithi Mutunga from Nairobi, Kenya. I am a student at
+              the University of Nairobi studying Actuarial Science. I am also a
+              self-taught web developer.
+            </p>
+            <p>
+              I am always looking for challenging work and I would never turn
+              down a chance to grow my skills as a developer.
+            </p>
+            <p>
+              I like reading books and going out on my bike. I enjoy learnign
+              and listening to music while I carry out a big chunk of my
+              activities.
+            </p>
+            <p>
+              If you need to contact me, you can check
+              <a href="#contact">here</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div>
+          <div class="skills-basics">
+            <ul>
+              <li>
+                <div>
+                  <img src="./static/icons/html.svg" alt="HTML5 icon" />
+                  <p>HTML 5</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="./static/icons/css.svg" alt="CSS3 icon" />
+                  <p>CSS 3</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="./static/icons/js.svg" alt="JavaScript icon" />
+                  <p>JavaScript</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="frontend-frameworks">
+            <ul>
+              <li>
+                <div>
+                  <img src="./static/icons/react.svg" alt="React JS icon" />
+                  <p>React JS</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="./static/icons/tailwind.svg"
+                    alt="Tailwind CSS icon"
+                  />
+                  <p>Tailwind CSS</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="backend-python">
+            <ul>
+              <li>
+                <div>
+                  <img src="./static/icons/python.svg" alt="Python icon" />
+                  <p>Python</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="./static/icons/django.svg" alt="Django icon" />
+                  <p>Django</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="./static/icons/flask.svg" alt="Flask icon" />
+                  <p>Flask</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="backend-js">
+            <ul>
+              <li>
+                <div>
+                  <img src="./static/icons/node.svg" alt="Node JS icon" />
+                  <p>Node JS</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src="./static/icons/expess.svg" alt="Express JS icon" />
+                  <p>Express JS</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects">
+        <h2>Projects</h2>
+        <div>
+          <ul>
+            <li>
+              <a href="" data-name="blog-app" class="proj-links">
+                <div>
+                  <h3>Bloggy</h3>
+                  <p>
+                    A simple blog site app written in React JS and Django Rest
+                    Framework.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" data-name="recipe-app" class="proj-links">
+                <div>
+                  <h3>Recipe App</h3>
+                  <p>
+                    A simple recipe app written in Django, Django Template and
+                    CSS.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a href="" data-name="learning-log" class="proj-links">
+                <div>
+                  <h3>Learning Log</h3>
+                  <p>
+                    A simple learning log app written in Django, Django Template
+                    and CSS.
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="" data-name="marketplace" class="proj-links">
+                <div>
+                  <h3>Puddle</h3>
+                  <p>
+                    A simple marketplace app written in Django, Django Template
+                    and CSS.
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <div>
+              <p>
+                I am currently working on a better and bigger E-Commerce Site in
+                Typescript React and Express
+              </p>
+              <p>
+                If you want to see more, check out my
+                <a
+                  href="http://github.com/opaque-maniac"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Github</a
+                >
+                profile.
+              </p>
+            </div>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="education">
+        <h2>Education</h2>
+        <div class="top">
+          <ul>
+            <li>
+              <div>
+                <h3>Springs Of Glory Academy</h3>
+                <p>Primary School</p>
+                <p>Duration: <span>2007 - 2017</span></p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Mumbuni Secondary School</h3>
+                <p>Secondary School</p>
+                <p>Duration: <span>2018 - 2022</span></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom">
+          <ul>
+            <li>
+              <div>
+                <h3>University Of Nairobi</h3>
+                <p>University</p>
+                <p><span>Currently enrolled.</span></p>
+                <p>Duration: <span>2023 - 2027</span></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Experience section -->
+      <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            <div>
+              <h3>Topic Author/Tester</h3>
+              <p>
+                I am a topic author. Here I write topics for students who use
+                the platform when learning how to code, questions and tests to
+                those questions.
+              </p>
+              <p>Since: <span>November 2023</span></p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <!-- The Success/Fail message section -->
+        <div id="success-message-container">
+          <div id="button-container">
+            <div
+              id="button"
+              tabindex="0"
+              role="button"
+              aria-label="Click To Close Popup"
+            >
+              <span class="fa-regular fa-circle-xmark"></span>
+            </div>
+          </div>
+          <p id="display-message"></p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div id="contact">
+          <p>
+            Connect with me:
+            <a href="#">
+              <span aria-label="Github Icon" class="fa-brands fa-github"></span>
+            </a>
+            |
+            <a href="#">
+              <span
+                aria-label="Linkedin Icon"
+                class="fa-brands fa-linkedin"
+              ></span>
+            </a>
+            |
+            <a href="#">
+              <span class="fa-brands fa-square-x-twitter"></span>
+            </a>
+          </p>
+        </div>
+
+        <!-- Complaints Form -->
+        <div id="form">
+          <div>
+            <form id="contact-form">
+              <div>
+                <label class="hidden" for="email">Email</label>
+                <input
+                  type="email"
+                  name="user_email"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div>
+                <label class="hidden" for="name">Name</label>
+                <input
+                  type="text"
+                  name="user_name"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div style="margin-bottom: 0">
+                <label class="hidden" for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  cols="10"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  style="display: inline-block; margin-top: 1rem"
+                  type="submit"
+                  id="submit-button"
+                >
+                  Send
+                </button>
+                <!-- The Loader -->
+                <div style="margin-top: 2rem" id="loader" class="hidden">
+                  <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

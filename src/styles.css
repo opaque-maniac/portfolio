@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
   color: #333333;
+  scrollbar-width: 0;
 }
 header {
   background-color: #007bff;
@@ -26,6 +27,7 @@ header h1 {
 header p {
   font-size: 1.5em;
   margin-top: 10px;
+  font-family: "Arial Black", sans-serif;
 }
 section {
   padding: 50px 20px;
@@ -44,7 +46,8 @@ section {
 .projects,
 .skills,
 .education,
-.experience {
+.experience,
+.modal-section {
   background-color: #f8f9fa;
   margin-bottom: 20px;
   padding: 20px;
@@ -57,6 +60,7 @@ section {
   margin: 10px 0;
   padding: 10px;
   border-radius: 5px;
+  font-size: 1rem !important;
 }
 .image-container {
   flex-basis: 40%;
@@ -129,7 +133,8 @@ footer span {
   height: 100%;
 }
 
-#button {
+#button,
+#modal-button {
   cursor: pointer;
 }
 
@@ -196,12 +201,6 @@ footer form a {
   display: none !important;
 }
 
-.project-title {
-  display: flex;
-  justify-content: space-between;
-  gap: 2px;
-}
-
 .toggle-button {
   background-color: transparent;
   background-color: #007bff;
@@ -218,21 +217,6 @@ footer form a {
 
 .hide {
   display: none;
-}
-
-.project-description {
-  display: flex;
-  justify-content: start;
-  gap: 1rem;
-}
-
-.project-description img {
-  width: 300px;
-  height: 200px;
-  margin-right: 10px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 20px;
 }
 
 /* Loader */
@@ -341,6 +325,144 @@ footer form a {
   margin: 0 auto 1rem auto;
 }
 
+/* For education */
+.education * {
+  text-align: center;
+}
+.education h2 {
+  text-align: start;
+}
+
+.education ul,
+.education li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.education ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: row wrap;
+}
+
+.education li {
+  height: 160px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.education .top ul {
+  gap: 2rem;
+}
+.education .top li {
+  flex-basis: 50%;
+}
+.education .bottom li {
+  flex-basis: 60%;
+}
+
+.education li {
+  width: 40vw;
+  margin: 0 auto 1rem auto;
+}
+
+.education span {
+  font-weight: 700;
+}
+
+/* For the modal */
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal section {
+  width: 70vw;
+  height: 70vh;
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-button {
+  z-index: 6;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  position: fixed;
+}
+
+#modal-button span {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* For modal projects */
+.modal-project {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal-project img {
+  width: 300px;
+  height: 450px;
+  margin-right: 10px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
+}
+
+/* For project styling */
+.projects ul,
+.projects li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.projects > div {
+  margin-bottom: 2rem;
+}
+
+.projects ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.projects li {
+  flex-basis: 40%;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.projects li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 10px;
+}
+.projects li:hover {
+  transform: scale(1.05);
+}
+
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
   header {
@@ -393,13 +515,6 @@ footer form a {
     max-width: 150px;
     margin: 0 auto;
   }
-  .project-description {
-    display: block;
-    padding-left: 1rem;
-  }
-  .project-description p {
-    text-align: center;
-  }
   footer span {
     color: #ffffff;
     display: inline-block;
@@ -424,5 +539,41 @@ footer form a {
   .skills-basics,
   .frontend-frameworks {
     margin-bottom: 0rem;
+  }
+  .education ul {
+    display: block;
+  }
+  .education li {
+    width: 100%;
+    margin: 0;
+  }
+
+  .modal section {
+    overflow-y: scroll;
+    width: 80vw;
+  }
+  .modal-project {
+    display: block;
+  }
+  .modal-project img {
+    height: 500px;
+  }
+  .modal-project img {
+    margin-right: 0;
+  }
+  .modal p {
+    text-align: center;
+  }
+  .projects ul {
+    display: block;
+  }
+  .projects > div {
+    margin-bottom: 1rem;
+  }
+  .projects li {
+    margin-bottom: 1rem;
+  }
+  .modal section {
+    display: block;
   }
 }
