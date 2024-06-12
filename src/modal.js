@@ -45,10 +45,41 @@ const handleCloseModalClick = (e) => {
   });
 };
 
+// Click event handler for modal
+const handleModalClick = (e) => {
+  if (e.target === modal) {
+    hideModal();
+    modalProjects.forEach((project) => {
+      project.setAttribute("aria-hidden", "true");
+      if (!project.classList.contains("hidden")) {
+        project.classList.add("hidden");
+      }
+    });
+  }
+};
+
+// Event handler for the escape key
+const handleEscapeKey = (e) => {
+  if (modal.classList.contains("hidden")) return;
+  if (e.key === "Escape") {
+    hideModal();
+    modalProjects.forEach((project) => {
+      project.setAttribute("aria-hidden", "true");
+      if (!project.classList.contains("hidden")) {
+        project.classList.add("hidden");
+      }
+    });
+  }
+};
+
 window.addEventListener("DOMContentLoaded", () => {
   projectLinks.forEach((link) => {
     link.addEventListener("click", handleProjClick);
   });
 
   modalButton.addEventListener("click", handleCloseModalClick);
+
+  modal.addEventListener("click", handleModalClick);
+
+  document.addEventListener("keydown", handleEscapeKey);
 });

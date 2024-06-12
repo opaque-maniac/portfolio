@@ -4,6 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#007bff" />
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Portfolio website for Mark Mbithi Mutunga, a self-taught web developer from Nairobi, Kenya. Also a way to contact him for queries or work."
+    />
+    <meta
+      name="keywords"
+      content="Mark Mbithi Mutunga, self-taught web developer, kenya, nairobi, portfolio, web developer, designer, projects, skills, web design, development"
+    />
+    <meta name="author" content="Mark Mbithi Mutunga" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- For Social Media -->
+    <meta property="og:title" content="Mark Mbithi" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://markmutunga.me/assets/me.jpg" />
+    <meta property="og:url" content="http://www.markmutunga.me" />
+    <meta name="twitter:card" content="" />
+    <meta
+      property="og:description"
+      content="Portfolio of a self-taught web developer from Nairobi, Kenya."
+    />
+    <meta property="og:site_name" content="Mark Mutunga" />
+    <meta name="twitter:image:alt" content="Picture of Mark Mutunga" />
+
+    <!-- Favicon, scripts, stylesheets -->
     <link rel="icon" href="./static/favicon.ico" />
     <link
       rel="stylesheet"
@@ -185,7 +212,7 @@
       <!-- The Header -->
       <header>
         <h1>Mark Mbithi Mutunga</h1>
-        <p>Always Learning, Always Growing</p>
+        <p>How are you?</p>
       </header>
 
       <!-- About Section -->
@@ -197,19 +224,26 @@
           </div>
           <div class="about-container-about">
             <p>
-              Hi, I'm Mark Mbithi Mutunga from Nairobi, Kenya. I am a student at
-              the University of Nairobi studying Actuarial Science. I am also a
-              self-taught web developer.
+              Hi, I'm
+              <span style="font-weight: 700; font-style: italic"
+                >Mark Mbithi Mutunga</span
+              >
+              from Nairobi, Kenya. I am a student at the University of Nairobi
+              currently studying Actuarial Science. I am also a
+              <span class="style-font" style="font-size: 1.05rem"
+                >self-taught web developer</span
+              >.
             </p>
             <p>
-              I am always looking for challenging work and I would never turn
-              down a chance to grow my skills as a developer.
+              I am always looking for work and opportunities to use my skills. I
+              would never turn down a chance to grow my skills as a developer.
             </p>
             <p>
-              I like reading books and going out on my bike. I enjoy learnign
-              and listening to music while I carry out a big chunk of my
-              activities.
+              My hobbies include reading, riding my bycicle, listening to music
+              and watching documentaries. I also like learning new things
+              because it keeps me busy.
             </p>
+            <p>Here is more information about me.</p>
             <p>
               If you need to contact me, you can check
               <a href="#contact">here</a>
@@ -307,6 +341,9 @@
       <!-- Projects Section -->
       <section class="projects">
         <h2>Projects</h2>
+        <div class="project-instructions">
+          <p>Click on one if you want to learn more about it.</p>
+        </div>
         <div>
           <ul>
             <li>
@@ -323,7 +360,7 @@
             <li>
               <a href="" data-name="recipe-app" class="proj-links">
                 <div>
-                  <h3>Recipe App</h3>
+                  <h3>Flavor Fusion</h3>
                   <p>
                     A simple recipe app written in Django, Django Template and
                     CSS.
@@ -388,6 +425,9 @@
           <ul>
             <li>
               <div>
+                <div>
+                  <img src="./static/sga.svg" alt="Springs of Glory logo" />
+                </div>
                 <h3>Springs Of Glory Academy</h3>
                 <p>Primary School</p>
                 <p>Duration: <span>2007 - 2017</span></p>
@@ -395,6 +435,9 @@
             </li>
             <li>
               <div>
+                <div>
+                  <img src="./static/mumbuni.svg" alt="High School logo" />
+                </div>
                 <h3>Mumbuni Secondary School</h3>
                 <p>Secondary School</p>
                 <p>Duration: <span>2018 - 2022</span></p>
@@ -406,6 +449,12 @@
           <ul>
             <li>
               <div>
+                <div>
+                  <img
+                    src="./static/uon.svg"
+                    alt="University of Nairobi logo"
+                  />
+                </div>
                 <h3>University Of Nairobi</h3>
                 <p>University</p>
                 <p><span>Currently enrolled.</span></p>
