@@ -49,6 +49,11 @@ const showMessage = (message) => {
   messageDisplay.textContent = message;
 };
 
+// Function for recaptcha
+const onSubmit = () => {
+  form.submit();
+};
+
 window.addEventListener("DOMContentLoaded", () => {
   toggleButton.forEach((button) => {
     button.addEventListener("click", handleClick);
